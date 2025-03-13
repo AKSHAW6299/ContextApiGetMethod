@@ -7,8 +7,10 @@ import DataTable from 'react-data-table-component';
 
 function GetApiComponent() {
     const [loading, setLoading] = useState(true);
+
+    // Getting the api data
     const apiData = useContext(GetApiContext);
-    console.log('DATA FROM CONTEXT API :', apiData);
+    // console.log('DATA FROM CONTEXT API :', apiData);
 
     // If your context returns an object with a 'data' property, adjust accordingly
     useEffect(() => {
