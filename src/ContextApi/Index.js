@@ -9,8 +9,7 @@ export const GetApiContext = createContext();
 export const GetApiProvider = ({ children }) => {
 
     const [data, setData] = useState("");
-
-
+    
     useEffect(() => {
         fetchApiData()
     }, [])
